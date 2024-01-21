@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>НЕ БЕЗ IT</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="canvas1200 header-con">
+        <a href="#" class="header-logo-box">
+          <img id="logo" src="Pics/nbIT_logo.svg" alt="svg">
+        </a>
+        <ul class="header-right-buttons">
+          <li><a href="#" class="a">Курсы</a></li>
+          <li><a href="#" class="a">О нас</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="canvas1200">
+      <a href="#logo">
+        <div id="return-to-top-but" class="disable-rttb">
+          <div class="vert-align-rttb">Вверх</div> 
+        </div>
+      </a>
+      <h1 id="main-phrase">НЕ БЕЗ IT</h1>
+
+      <div class="line"></div>
+
+      <div class="interesting">
+        <a href="#about-us-do" class="a">
+          Внизу интереснее
+        </a>
+      </div>
+
+      <div id="about-us-do">
+        <div class="block-title">
+          Здесь учаться, чтобы зарабатывать
+        </div>
+        <div class="space40"></div>
+        <div class="block-text">
+          &nbsp;&nbsp;
+          &nbsp;&nbsp;
+          &nbsp;&nbsp;
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit praesentium vitae quam nihil laborum, facilis, reprehenderit libero tempora officia ab nisi quas debitis porro delectus totam veritatis quo. 
+          <br>
+          &nbsp;&nbsp;
+          &nbsp;&nbsp;
+          &nbsp;&nbsp;
+          Eum ipsam quod culpa harum ducimus, officiis atque corporis quas voluptatem unde. Reiciendis laboriosam possimus quasi beatae, illum nulla dolorum sint quos, sed repellat exercitationem amet tenetur unde iusto voluptate optio alias temporibus aspernatur molestias eum? Laboriosam veritatis facilis eveniet itaque ut, iste consectetur voluptatem amet temporibus fuga tempora voluptate illum optio qui, fugiat perferendis vel. 
+          <br>
+          &nbsp;&nbsp;
+          &nbsp;&nbsp;
+          &nbsp;&nbsp;
+          Itaque iure velit ab eligendi sequi accusamus, sit laudantium et placeat eos! Facilis reiciendis unde fugit!
+        </div>
+      </div>
+
+
+      <div id="ways">
+        <div class="block-title">
+          Основные направления
+        </div>
+        <div class="space40"></div>
+
+        <div class="flex-rcon">
+          <div id="modelling" class="block-square flex-raw">
+            <div class="way-title">3D modelling</div>
+          </div>
+          <div id="code" class="block-square flex-raw">
+            <div class="way-title">Code</div>
+          </div>  
+        </div>
+
+        <div class="flex-rcon">
+          <div id="level-design" class="block-square flex-raw">
+            <div class="way-title">Level design</div>
+          </div>
+          <div id="graphics" class="block-square flex-raw">
+            <div class="way-title">Arcitecture</div>
+          </div>  
+        </div>
+
+      </div>
+
+
+      <div class="flex-rcon">
+        <div class="flex-raw square-item">
+          <div class="content-inside-square">
+            <img class="pics-in-box" src="./Pics/modelling.png">
+            <h2 class="text-isnide-box">3D modelling</h2>
+            <div class="text-isnide-box description">
+              Lorem ipsum, asperiores nulla voluptatem cumque mollitia, quidem minus voluptate? Explicabo, sunt.
+            </div>
+          </div>
+        </div>
+        <div class="flex-raw square-item">
+          <div class="content-inside-square">
+            <img class="pics-in-box" src="./Pics/gamedes.png">
+            <h2 class="text-isnide-box">Game Design</h2>
+            <div class="text-isnide-box description">
+              Lorem ipsum. dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+        </div>
+        <div class="flex-raw square-item">
+          <div class="content-inside-square">
+            <img class="pics-in-box" src="./Pics/code.png">
+            <h2 class="text-isnide-box">Programming</h2>
+            <div class="text-isnide-box description">
+              Non, autem! Ratione explicabo laudantium nihil culpa magni aliquam accusantium repudiandae provident asperiores nulla voluptatem cumque mollitia, quidem minus voluptate? 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div style="height: 500px;"></div> -->
+
+
+      <div class="info-box">
+        <div class="flex-rcon content-inside-info-box">
+          <div class="flex-raw-mini">
+            <img class="pics-inside-info-box" src="./Pics/modelling.png">
+          </div>
+          <div class="flex-raw">
+            <h2 class="text-isnide-box">Text box example</h2>
+            <div class="text-isnide-box description">
+              Lorem ipsum, asperiores nulla voluptatem cumque mollitia, quidem minus voluptate? Explicabo, sunt.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="aaa"></div>
+
+    </main>
+
+
+
+
+    <script type="text/javascript">
+      var but = document.getElementById('return-to-top-but');
+      window.onscroll = function(){
+        var p = document.documentElement.scrollTop;
+        // console.log(p);
+
+        if (p > 1010) {
+          but.className = 'enable-rttb';
+        } else if (p < 1010) {
+          but.className = 'disable-rttb';
+        }
+    }
+      </script>
+      
+
+  </body>
+</html>
