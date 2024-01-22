@@ -43,19 +43,11 @@
         </div>
         <div class="space40"></div>
         <div class="block-text">
-          &nbsp;&nbsp;
-          &nbsp;&nbsp;
-          &nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit praesentium vitae quam nihil laborum, facilis, reprehenderit libero tempora officia ab nisi quas debitis porro delectus totam veritatis quo. 
-          <br>
-          &nbsp;&nbsp;
-          &nbsp;&nbsp;
-          &nbsp;&nbsp;
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           Eum ipsam quod culpa harum ducimus, officiis atque corporis quas voluptatem unde. Reiciendis laboriosam possimus quasi beatae, illum nulla dolorum sint quos, sed repellat exercitationem amet tenetur unde iusto voluptate optio alias temporibus aspernatur molestias eum? Laboriosam veritatis facilis eveniet itaque ut, iste consectetur voluptatem amet temporibus fuga tempora voluptate illum optio qui, fugiat perferendis vel. 
-          <br>
-          &nbsp;&nbsp;
-          &nbsp;&nbsp;
-          &nbsp;&nbsp;
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           Itaque iure velit ab eligendi sequi accusamus, sit laudantium et placeat eos! Facilis reiciendis unde fugit!
         </div>
       </div>
@@ -84,63 +76,55 @@
             <div class="way-title">Arcitecture</div>
           </div>  
         </div>
-
       </div>
 
+      <div id="students-works">
+        <div class="block-title">Работы студентов</div>
 
-      <div class="flex-rcon">
-        <div class="flex-raw square-item">
-          <div class="content-inside-square">
-            <img class="pics-in-box" src="./Pics/modelling.png">
-            <h2 class="text-isnide-box">3D modelling</h2>
-            <div class="text-isnide-box description">
-              Lorem ipsum, asperiores nulla voluptatem cumque mollitia, quidem minus voluptate? Explicabo, sunt.
-            </div>
-          </div>
-        </div>
-        <div class="flex-raw square-item">
-          <div class="content-inside-square">
-            <img class="pics-in-box" src="./Pics/gamedes.png">
-            <h2 class="text-isnide-box">Game Design</h2>
-            <div class="text-isnide-box description">
-              Lorem ipsum. dolor sit amet consectetur adipisicing elit.
-            </div>
-          </div>
-        </div>
-        <div class="flex-raw square-item">
-          <div class="content-inside-square">
-            <img class="pics-in-box" src="./Pics/code.png">
-            <h2 class="text-isnide-box">Programming</h2>
-            <div class="text-isnide-box description">
-              Non, autem! Ratione explicabo laudantium nihil culpa magni aliquam accusantium repudiandae provident asperiores nulla voluptatem cumque mollitia, quidem minus voluptate? 
-            </div>
-          </div>
+        <div class="space40"></div>
+
+        <div class="fog-box"><div class="fog"></div></div>
+
+        <div class="student-galary">
+          <div class="block-img-in-grid grid-item1"></div>
+          <div class="block-img-in-grid grid-item2"></div>
+          <div class="block-img-in-grid grid-item3"></div>
+          <div class="block-img-in-grid grid-item4"></div>
+          <div class="block-img-in-grid grid-item5"></div>
         </div>
       </div>
 
-      <!-- <div style="height: 500px;"></div> -->
-
-
-      <div class="info-box">
-        <div class="flex-rcon content-inside-info-box">
-          <div class="flex-raw-mini">
-            <img class="pics-inside-info-box" src="./Pics/modelling.png">
+      <div id="pass-application">
+        <div id="send-box" class="flex-rcon">
+          <div class="flex-raw flex-ccon send-left">
+            <div class="flex-ccon send-title">Оставить заявку на вступление</div>
+            <div style="height: 20px;"></div>
+            <div class="flex-ccon send-text">Это будет твой первый шаг к новой жизни</div>
           </div>
-          <div class="flex-raw">
-            <h2 class="text-isnide-box">Text box example</h2>
-            <div class="text-isnide-box description">
-              Lorem ipsum, asperiores nulla voluptatem cumque mollitia, quidem minus voluptate? Explicabo, sunt.
+          <div class="flex-raw flex-ccon send-right">
+            <input type="text" placeholder="Имя" name="name" class="flex-ccon send-field" />
+            <input type="text" placeholder="Почта" name="mail" class="flex-ccon send-field" />
+
+            <div class="dropdown"></div>
+            <div class="dropdown-way">
+              <button 
+              class="dropdown-toggle flex-ccon" 
+              easy-toggle="#categories" 
+              easy-class="open" 
+              easy-rcoe>
+              Направление
+              </button>
+              <input type="button" value="Направление" name="way" class="flex-ccon send-field" />
             </div>
+            <div class="flex-ccon"></div>
           </div>
         </div>
-      </div>
 
-      <div class="aaa"></div>
+        <div class="space40"></div>
+        <div class="space40"></div>
+      </div>
 
     </main>
-
-
-
 
     <script type="text/javascript">
       var but = document.getElementById('return-to-top-but');
@@ -153,8 +137,72 @@
         } else if (p < 1010) {
           but.className = 'disable-rttb';
         }
-    }
-      </script>
+      }
+    </script>
+
+    <script>
+      /*!
+      * EasyToggler v2.2.7 (https://github.com/rah-emil/easy-toggler#readme)
+      * Copyright 2022 Rah Emil <013131@mail.ru>
+      * Licensed under MIT (https://github.com/rah-emil/easy-toggler/blob/master/LICENSE)
+      */
+      function e(e,t){
+        const s=e.target.closest(`[${t.toggle}]`),
+        o=e.target.closest(`[${t.remove}]`),
+        l=e.target.closest(`[${t.add}]`);
+
+        s&&(e.preventDefault(),
+        ((e,t)=>{const s=e.getAttribute(t.toggle);
+          
+        document.querySelectorAll(`[${t.toggle}]`)
+        .forEach((s=>{if(!s.hasAttribute(t.parallel)&&s!==e){
+          document.querySelector(s.getAttribute(t.toggle))
+          .classList.remove(s.getAttribute(t.class));
+          
+          const o=e.getAttribute(t.self);
+          
+          o&&e.classList.remove(o)}})),
+          document.querySelector(s)
+          ?.classList.toggle(e.getAttribute(t.class));
+          
+          const o=e.getAttribute(t.self);
+          
+          o&&e.classList.toggle(o),
+          t.onToggle(e)})(s,t)),
+          o&&(e.preventDefault(),
+          ((e,t)=>{const s=e.getAttribute(t.remove),
+          o=e.getAttribute(t.class);
+            
+          document.querySelectorAll(s)
+          .forEach((e=>{e.classList.remove(o)}));
+          
+          const l=e.getAttribute(t.self);
+          
+          l&&e.classList.remove(l),
+          t.onRemove(e)})(o,t)),
+          l&&(e.preventDefault(),
+          ((e,t)=>{const s=e.getAttribute(t.add),
+          o=e.getAttribute(t.class);
+            
+          document.querySelectorAll(s)
+          .forEach((e=>{e.classList.add(o)}));
+          
+          const l=e.getAttribute(t.self);
+          l&&e.classList.add(l),t.onAdd(e)})(l,t)),
+          s||o||l||((e,t)=>{const s=document
+            .querySelectorAll(`[${t.rcoe}]`);
+            
+          Array.from(s).forEach((s=>{let o=s.getAttribute(t.toggle),l=s.getAttribute(t.class);
+            if(!e.target.closest(o)){document.querySelector(o)?.classList.remove(l);
+              const e=s.getAttribute(t.self);
+              e&&s.classList.remove(e),t.onRcoe(s)}}))})(e,t)}
+              const t={toggle:"easy-toggle",add:"easy-add",remove:"easy-remove",class:"easy-class",rcoe:"easy-rcoe",parallel:"easy-parallel",self:"easy-self",selfRcoe:"easy-self-rcoe",onToggle(e){},onAdd(e){},onRemove(e){},onRcoe(e){}},
+              s=s=>{
+              const o={...t,...s};
+              document.addEventListener("click",(t=>{e(t,o)}))};
+              export{s as default};
+      //# sourceMappingURL=easy-toggler.min.js.map
+    </script>
       
 
   </body>

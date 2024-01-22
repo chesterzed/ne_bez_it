@@ -191,6 +191,165 @@ ul {
     background-image: url("Pics/graph.png");
 }
 
+.fog-box {
+    position: relative;
+}
+
+.fog {
+    position: absolute;
+    left: calc(50%-250px);
+    top: 100%;
+    z-index: -2;
+
+    display: block;
+    height: 500px;
+    width: 900px;
+    -webkit-filter: blur(130px);
+    -moz-filter: blur(130px);
+    -o-filter: blur(130px);
+    -ms-filter: blur(130px);
+    filter: blur(130px);
+    background-image: url('Pics/fog2.svg');
+}
+
+.student-galary {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(7, 100px);    ;
+    grid-gap: 20px;
+}
+
+.block-img-in-grid {
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.grid-item1 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    background-image: url("Pics/coder.png");
+}
+
+.grid-item2 {
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url("Pics/level.png");
+}
+
+.grid-item3 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    background-image: url("Pics/gamedev.png");
+}
+
+.grid-item4 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    background-image: url("Pics/graph.png");
+}
+
+.grid-item5 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-image: url("Pics/modelling.png");
+}
+
+#send-box {
+    border-radius: 80px;
+    
+    width: auto;
+    height: 580px;
+    
+    margin: 0px 120px;
+
+    background-color: #52D1C8;
+}
+
+.send-title {
+    text-align: left;
+    font: normal normal 600 60px Raleway;
+    color: #FFFFFF;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+
+.send-text {
+    text-align: left;
+    font: normal normal 200 40px Raleway;
+    color: #FFFFFF;
+    letter-spacing: 0px;
+    opacity: 0.9;
+}
+
+.send-field {
+    outline: none;
+    width: 380px;
+    height: 60px;
+    margin-bottom: 20px;
+
+    background: #52D1C8 0% 0% no-repeat padding-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    opacity: 0.8;
+
+    color: white;
+}
+
+.send-field:hover {
+    background: #42a69f 0% 0% no-repeat padding-box;
+}
+
+.send-field:hover:focus:active {
+    background: #398e88 0% 0% no-repeat padding-box;
+}
+
+
+input {
+    padding-left: 20px;
+    text-align: left;
+    font: normal normal 200 20px Raleway;
+    color: #FFFFFF;
+    letter-spacing: 0px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
+}
+
+input::placeholder {
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+.dropdown-way {
+
+}
+
+.dropdown-way input {
+    padding-left: 20px;
+    text-align: left;
+    font: normal normal 200 20px Raleway;
+    color: #FFFFFF;
+    letter-spacing: 0px;
+}
+
+.send-left {
+    margin: 60px 20px 60px 60px;
+}
+
+.send-right {
+    margin: 60px 60px 60px 20px;
+}
 
 #about-us-do {
     padding: 100px 0px 220px 0px;
@@ -200,11 +359,13 @@ ul {
     padding: 100px 0px 220px 0px;
 }
 
+#students-works {
+    padding: 100px 0px 100px 0px;
+}
 
-
-
-
-
+#pass-application {
+    padding: 100px 0px 100px 0px;
+}
 
 
 
@@ -237,55 +398,6 @@ ul {
     /* -webkit-box-flex-group: auto; */
     flex: auto;
 
-}
-
-.square-item {
-    border-radius: 54px;
-    width: 590px;
-    height: 590px;
-    background-color: #282727;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
-    margin: 10px 10px;
-}
-
-.square-item:hover {
-    /* scale: 1.03; */
-    background-color: rgb(72, 91, 134);
-}
-
-.info-box {
-    border-radius: 40px;
-    background-color: #282727;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
-    margin: 20px 20px;
-}
-
-.content-inside-info-box {
-    font-size: 26px;
-}
-
-.pics-inside-info-box {
-    display: block;
-    width: 70%;
-    border-radius: 30px;
-    margin: 20px 20%;
-    float: center;
-}
-
-.content-inside-square {
-    margin: 30px 25px;
-}
-
-.pics-in-box {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    width: 95%;
-    border-radius: 30px;
-}
-
-.description {
-    font-family: "RaleWay-extralight";
 }
 
 @font-face {
