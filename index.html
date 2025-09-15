@@ -73,11 +73,11 @@
             <div class="way-title">Level design</div>
           </div>
           <div id="graphics" class="block-square flex-raw">
-            <div class="way-title">Arcitecture</div>
+            <div class="way-title">Architecture</div>
           </div>  
         </div>
       </div>
-
+      
       <div id="students-works">
         <div class="block-title">Работы студентов</div>
 
@@ -96,28 +96,39 @@
 
       <div id="pass-application">
         <div id="send-box" class="flex-rcon">
+
           <div class="flex-raw flex-ccon send-left">
             <div class="flex-ccon send-title">Оставить заявку на вступление</div>
             <div style="height: 20px;"></div>
             <div class="flex-ccon send-text">Это будет твой первый шаг к новой жизни</div>
           </div>
-          <div class="flex-raw flex-ccon send-right">
-            <input type="text" placeholder="Имя" name="name" class="flex-ccon send-field" />
-            <input type="text" placeholder="Почта" name="mail" class="flex-ccon send-field" />
 
-            <div class="dropdown"></div>
-            <div class="dropdown-way">
-              <button 
-              class="dropdown-toggle flex-ccon" 
-              easy-toggle="#categories" 
-              easy-class="open" 
-              easy-rcoe>
-              Направление
-              </button>
-              <input type="button" value="Направление" name="way" class="flex-ccon send-field" />
-            </div>
-            <div class="flex-ccon"></div>
+          <div class="flex-raw send-right">
+            <form action="#" class="flex-ccon">
+              <input type="text" placeholder="Имя" name="name" class="flex-col send-field" />
+              <input type="text" placeholder="Почта" name="mail" class="flex-col send-field" />
+
+              <select placeholder="dasdf" class="send-field flex-col" id="way" name="way">
+                <option value="" disabled selected>Choose . . . </option>
+                <option value="Text1">Text1</option>
+                <option value="Text2">Text2</option>
+                <option value="Text3">Text3</option>
+                <option value="Text4">Text4</option>
+              </select>
+              <div class="flex-rcon">
+                <input type="checkbox" class="flex-raw" id="myCheck">
+                <div class="flex-raw">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, quibusdam!</div>
+              </div>
+              <div class="flex-rcon">
+                <input type="checkbox" class="flex-raw" id="myCheck">
+                <div class="flex-raw">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, quibusdam!</div>
+              </div>
+              <div style="height: 10px;"></div>
+              <!-- <div class="space40"></div> -->
+              <input href="#" type="submit" value="Отправить" class="flex-col send-button">
+            </form>
           </div>
+
         </div>
 
         <div class="space40"></div>
@@ -140,70 +151,21 @@
       }
     </script>
 
-    <script>
-      /*!
-      * EasyToggler v2.2.7 (https://github.com/rah-emil/easy-toggler#readme)
-      * Copyright 2022 Rah Emil <013131@mail.ru>
-      * Licensed under MIT (https://github.com/rah-emil/easy-toggler/blob/master/LICENSE)
-      */
-      function e(e,t){
-        const s=e.target.closest(`[${t.toggle}]`),
-        o=e.target.closest(`[${t.remove}]`),
-        l=e.target.closest(`[${t.add}]`);
+    <script type="text/javascript">
+      const button = document.querySelector('.dropdown-toggle');
+      const menu = document.querySelector('.drop-menu');
 
-        s&&(e.preventDefault(),
-        ((e,t)=>{const s=e.getAttribute(t.toggle);
-          
-        document.querySelectorAll(`[${t.toggle}]`)
-        .forEach((s=>{if(!s.hasAttribute(t.parallel)&&s!==e){
-          document.querySelector(s.getAttribute(t.toggle))
-          .classList.remove(s.getAttribute(t.class));
-          
-          const o=e.getAttribute(t.self);
-          
-          o&&e.classList.remove(o)}})),
-          document.querySelector(s)
-          ?.classList.toggle(e.getAttribute(t.class));
-          
-          const o=e.getAttribute(t.self);
-          
-          o&&e.classList.toggle(o),
-          t.onToggle(e)})(s,t)),
-          o&&(e.preventDefault(),
-          ((e,t)=>{const s=e.getAttribute(t.remove),
-          o=e.getAttribute(t.class);
-            
-          document.querySelectorAll(s)
-          .forEach((e=>{e.classList.remove(o)}));
-          
-          const l=e.getAttribute(t.self);
-          
-          l&&e.classList.remove(l),
-          t.onRemove(e)})(o,t)),
-          l&&(e.preventDefault(),
-          ((e,t)=>{const s=e.getAttribute(t.add),
-          o=e.getAttribute(t.class);
-            
-          document.querySelectorAll(s)
-          .forEach((e=>{e.classList.add(o)}));
-          
-          const l=e.getAttribute(t.self);
-          l&&e.classList.add(l),t.onAdd(e)})(l,t)),
-          s||o||l||((e,t)=>{const s=document
-            .querySelectorAll(`[${t.rcoe}]`);
-            
-          Array.from(s).forEach((s=>{let o=s.getAttribute(t.toggle),l=s.getAttribute(t.class);
-            if(!e.target.closest(o)){document.querySelector(o)?.classList.remove(l);
-              const e=s.getAttribute(t.self);
-              e&&s.classList.remove(e),t.onRcoe(s)}}))})(e,t)}
-              const t={toggle:"easy-toggle",add:"easy-add",remove:"easy-remove",class:"easy-class",rcoe:"easy-rcoe",parallel:"easy-parallel",self:"easy-self",selfRcoe:"easy-self-rcoe",onToggle(e){},onAdd(e){},onRemove(e){},onRcoe(e){}},
-              s=s=>{
-              const o={...t,...s};
-              document.addEventListener("click",(t=>{e(t,o)}))};
-              export{s as default};
-      //# sourceMappingURL=easy-toggler.min.js.map
-    </script>
+      button.addEventListener('click', function() {
+        var cl = menu.className;
+
+        if (cl.includes('dropped')) {
+          menu.className = cl.replace('dropped', '');
+          menu.className = menu.className.replace('  ', '');
+        }else {
+          menu.className = cl + ' dropped';
+        }
+      });
       
-
+    </script>
   </body>
 </html>
