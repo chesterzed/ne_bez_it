@@ -10,7 +10,8 @@ I'm not sure that someone someday will use it. But you know... I have wanted to 
 
 ![screen3](scrennshots/scr3.png)
 
-![screen4](screenshots/scr4.png)
 
-![screen5](screenshots/scr5.png)
+![screen4](https://github.com/chesterzed/ne_bez_it/blob/6cb076eb7ad2f37085e4850e399144ac84848e65/scrennshots/scr4.png)
+
+![screen5](https://github.com/chesterzed/ne_bez_it/blob/6cb076eb7ad2f37085e4850e399144ac84848e65/scrennshots/scr5.png)
 
